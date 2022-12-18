@@ -19,10 +19,10 @@
                 <a href="index.html">
                     Home
                 </a>
-                <a href="#sobre">
+                <a href="index.html#sobre">
                     About
                 </a>
-                <a href="#conquista">
+                <a href="index.html#conquista">
                     Differential
                 </a>
                 <a class="btn-menu" href="form.php">
@@ -36,10 +36,10 @@
                 <a href="index.html">
                     Home
                 </a><br>
-                <a href="#sobre">
+                <a href="index.html#sobre">
                     About
                 </a><br>
-                <a href="#conquista">
+                <a href="index.html#conquista">
                     Differential
                 </a><br>
                 <a class="btn-menu" href="form.php">
