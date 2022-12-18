@@ -1,0 +1,146 @@
+@charset "utf-8";
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: system-ui, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+/* aqui em cima é para zerar as borda  e definida font*/
+.center{
+    max-width: 1100px;
+    margin: auto;
+    padding: 0 2%;
+    display: flex;
+    flex-wrap: wrap;
+    /* mnipular flex-box melhor */
+}
+header{
+    background-color: white;
+    padding: 20px 0;
+    border-bottom: 1px solid #0074b8;
+}
+.logo{
+    color: #0074b8;
+}
+.logo h2{
+    font-weight: normal;
+    font-size: 18px;
+}
+.menu{
+    width: 80%;
+    text-align: right;
+}
+.menu-mobile{
+    display: none;
+    text-align: right;
+}
+.menu-mobile i{
+    font-size: 25px;
+}
+.menu-mobile a{
+    color:black;
+    font-size: 14px;
+    text-decoration: none;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+.itens a{
+    color: white;
+    margin-left: 1%;
+    margin-right: 1%;
+    width: 20%;
+    font-size: 14px;
+}
+.menu a{
+    color:black;
+    font-size: 14px;
+    text-decoration: none;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+.menu a:hover{
+    color: #0074b8;
+}
+.menu .btn-menu{
+    background-color:#0074b8;
+    display: inline-block;
+    padding: 6px 12px;
+    color: white;
+    border-radius: 8px;
+}
+.menu .btn-menu:hover{
+    background-color: white;
+}
+/* 
+section main
+*/
+.Equipe{
+    background-color: #ebf3fc;
+}
+.Equipe .center{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 8px 0;
+    width: 100%;
+}
+.center .t{
+    width: 46%;
+    margin-right: 2%;
+    margin-left: 2%;
+    padding: 20px;
+    text-align: center;
+}
+.center .t h2{
+    color: #0074b8;
+    margin-bottom: 10px;
+    font-size: 24px;
+}
+.center .t p{
+    font-size: 18px;
+}
+.center .t:hover{
+    background-color: #52aee493;
+    margin-right: 1%;
+    margin-left: 1%;
+    border-radius: 10px;
+    text-align: center;
+
+}
+footer{
+    padding: 10px;
+    text-align: center;
+    background-color: #ebf3fc;
+}
+.contato{
+    height: 400px;
+}
+@media screen and (max-width: 768px){
+    .diferencial-single{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .chamada-sobre {
+        width:100%;
+    }
+    .conteudo-sobre p{
+        margin-bottom: 10px;
+    }
+    .menu-mobile{
+        display: block;
+        margin-right: 20px;
+    }
+    .menu{
+        display: none
+    }
+    .itens{
+        display: none;
+    }
+    .Equipe .center .t{
+        width: 100%;
+        margin-right: 20px;
+        margin-left: 20px;
+        margin-bottom: 10px;
+
+    }
+
+}

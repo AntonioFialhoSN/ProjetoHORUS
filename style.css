@@ -1,0 +1,244 @@
+@charset "utf-8";
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: system-ui, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+/* aqui em cima é para zerar as borda  e definida font*/
+.center{
+    max-width: 1100px;
+    margin: auto;
+    padding: 0 2%;
+    display: flex;
+    flex-wrap: wrap;
+    /* mnipular flex-box melhor */
+}
+header{
+    background-color: white;
+    padding: 20px 0;
+    border-bottom: 1px solid #0074b8;
+}
+.logo{
+    color: #0074b8;
+}
+.logo h2{
+    font-weight: normal;
+    font-size: 18px;
+}
+.menu{
+    width: 80%;
+    text-align: right;
+}
+.menu-mobile{
+    display: none;
+    text-align: right;
+}
+.menu-mobile i{
+    font-size: 25px;
+}
+.menu-mobile a{
+    color:black;
+    font-size: 14px;
+    text-decoration: none;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+.itens a{
+    color: white;
+    margin-left: 1%;
+    margin-right: 1%;
+    width: 20%;
+    font-size: 14px;
+}
+.menu a{
+    color:black;
+    font-size: 14px;
+    text-decoration: none;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+.menu a:hover{
+    color: #0074b8;
+}
+.menu .btn-menu{
+    background-color:#0074b8;
+    display: inline-block;
+    padding: 6px 12px;
+    color: white;
+    border-radius: 8px;
+}
+.menu .btn-menu:hover{
+    background-color: white;
+}
+/* 
+section main
+*/
+section.main{
+    background-color: #ebf3fc;
+    padding: 50px 0;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    /* efeito paralax só que image */
+
+}
+
+.main_cta{
+    width: 100%;
+    margin: 60px 0;
+    text-align: center;
+}
+.main_cta h2{
+    color: #0074b8;
+    font-size: 40px;
+}
+.main_cta p{
+    font-size: 20px;
+    font-weight: 600;
+    margin: 15px 0;
+}
+.main_cta button{
+    background-color:#0074b8;
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: white;
+    border-radius: 8px;
+    border-color: #0074b8;
+    border-style: none;
+    cursor: pointer;
+}
+.main_cta button:hover{
+    color: #0074b8;
+    background-color: #ebf3fc;
+}
+.diferenciais{
+    display: flex;
+    flex-wrap: wrap;
+    /* deixa resposivo */
+}
+.diferencial-single{
+    background-color: rgba(255, 255, 255, 0.274);
+    width: 22%;
+    margin-right: 1%;
+    margin-left: 1%;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.diferencial-single i{
+    color: black;
+    font-size: 23px; 
+}
+.diferencial-single h2{
+    color: black;
+    margin: 10px 0;
+    font-size: 17px; 
+}
+.diferencial-single:hover{
+    background-color: #0075b813;
+}
+.diferencial-single p{
+    font-size: 14px;
+    line-height: 20px;
+}
+section.sobre{
+    padding: 80px 0;
+}
+.chamada-sobre{
+    width: 100%;
+    text-align: center;
+}
+.chamada-sobre h2{
+    padding-top: 20px;
+    color: #0074b8;
+}
+.chamada-sobre p{
+    font-size: 15px;
+    color: black;
+    margin: 10px 0;
+}
+.conteudo-sobre{
+    text-align:left;
+    display: flex;
+    margin: 0 20px;
+    flex-wrap: wrap;
+}
+.conteudo-sobre p{
+    margin: 0 20px;
+    margin-bottom: 10px;
+}
+.conteudo-sobre button{
+    margin-left: 4%;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    background-color: #0074b8;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: white;
+    border-radius: 8px;
+    border-color: #0074b8;
+    border-style: none;
+    cursor: pointer;
+}
+.conteudo-sobre button:hover{
+    background-color: white;
+    color: #0074b8;
+}
+.conteudo-sobre span{
+    display: inline-block;
+    width:100%;
+    margin-top: 10px;
+}
+.conteudo-sobre i{
+    color: #0074b8
+}
+section.conquistas{
+    background-color: #ebf3fc;
+    padding: 8px 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+.conquista-single{
+    width: 22%;
+    margin-right: 1%;
+    margin-left: 1%;
+    padding: 20px;
+    text-align: center;
+}
+footer{
+    padding: 10px;
+    text-align: center;
+}
+
+@media screen and (max-width: 768px){
+    .diferencial-single{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .chamada-sobre {
+        width:100%;
+    }
+    .conteudo-sobre p{
+        margin-bottom: 10px;
+    }
+    .menu-mobile{
+        display: block;
+        margin-right: 20px;
+    }
+    .menu{
+        display: none
+    }
+    .itens{
+        display: none;
+    }
+
+}
+@media screen and (max-width: 400px){
+    .conquista-single{
+        width: 100%;
+    }
+}
