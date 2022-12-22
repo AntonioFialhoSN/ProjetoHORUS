@@ -1,3 +1,7 @@
+<?php
+
+?>
+
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -6,7 +10,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/37957a4d51.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style2.css">
-    <script src="mecanismo.js"></script>
     <title>Document</title>
 </head>
 <body>
@@ -50,9 +53,12 @@
     </header>
     <section class="papel">
         <div class="center">
-            <form action="conexao.php" method="POST">
+            <form id="fomulario">
                 <div class="titulo">
                     Registration Form
+                </div>
+                <div id="msgAlert">
+
                 </div>
                 <div class="corpo">
                     <input type="name" name="nome" placeholder="Responsible Name"><br>
@@ -62,7 +68,7 @@
                 </div>
             </form>
         </div>
-
     </section>
+    <script src="mecanismo.js"></script>
 </body>
 </html>
